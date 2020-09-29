@@ -1,0 +1,80 @@
+header{
+    text-align: center;
+    font-size: 25px;
+    font-family: gotham;
+    border-radius: 20px;
+}
+#Icecream{ 
+    color: palevioletred;
+    font-size:70px;
+    font-family: gotham;
+    font-weight: bold;
+    text-align:center;
+}
+#Icecream:hover{
+    background: linear-gradient(to bottom right, #ffc3a0, #ffafbd);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+#Author{
+    font-size:23px;
+    text-align:center;
+    font-family: gotham;
+}
+#Title{ /*Still useless as of now*/
+    color: white;
+    background-color: palevioletred;
+    background-size: 20px 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+#Lyrics{
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    padding:50px 20px;
+    box-shadow:0 10px 10px rgba(0,0,0,0.5);
+    margin: 50;
+}
+abbrv{   
+    color:black;
+    font-family:gotham;
+    font-size: 20px;
+}
+    ul {
+        border-radius: 10px;
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        overflow: hidden;
+        background-color: #333333;
+        text-align: center;
+        }             
+    li{
+        display:inline;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        background-color: none;
+        }
+    li:hover.select{
+        background: linear-gradient(to bottom right, #ffc3a0, #ffafbd);
+        background-clip:text;
+        fill: transparent;
+        }                
+    li:hover.remove{
+        background-color: #333333;
+                }
+    a{
+        background-color:transparent;
+        color: white;
+        padding: 0px 0px;
+        text-align: center;
+        text-decoration:none;
+        display: inline-block;
+        cursor: pointer;
+        }
