@@ -1,35 +1,149 @@
 header{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-family: gotham;
-    border-radius: 20px;
+    margin:0px;
+    padding:0px;
+    background-color: #333333;
 }
+body{
+    background-color: #525252;
+    margin:0px;
+}
+/*Slideshow css*/
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100px;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  overflow: hidden;
+  max-width: 5000px;
+  position: relative;
+  margin: 0px;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -o-transition: left 2s;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  font-family: lucida-sgrande;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.numbertext:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: hotpink;
+}
+
+.slide{
+  margin-top:0;
+  transition: left 2s ease;
+  -webkit-transition: left 2s ease;
+  -o-transition: left 2s ease;
+}
+
+
+/* Slide animation */
+/* 
+.slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #mySlides-1:target ~ .slideshow-container {
+        left: 0px;
+      }
+      #mySlides-2:target ~ .slideshow-container {
+        left: -1000px;
+      }
+      #mySlides-3:target ~ .slideshow-container {
+        left: -2000px;
+      }
+      #mySlides-4:target ~ .slideshow-container {
+        left: -3000px;
+}
+*/
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/*slideshow end*/
+
 #Icecream{ 
-    color: palevioletred;
-    font-size:70px;
-    font-family: gotham;
-    font-weight: bold;
-    text-align:center;
+  font-family: gotham;
+  font-weight: bold;
+  font-size: 70px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(to right, #ff758c, #ff758c 50%, #ff7eb3 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+  text-decoration: none;
 }
 #Icecream:hover{
-    background: linear-gradient(to bottom right, #ffc3a0, #ffafbd);
-    background-clip:text;
     -webkit-text-fill-color: transparent;
+    background-position: 0 100%;
 }
 #Author{
-    font-size:23px;
+    font-size:20px;
     text-align:center;
     font-family: gotham;
-}
-#Title{ /*Still useless as of now*/
-    color: white;
-    background-color: palevioletred;
-    background-size: 20px 50px;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding: 10px 5px;
-    text-align: center;
-    border-radius: 10px;
 }
 #Lyrics{
     text-align: center;
@@ -37,20 +151,18 @@ header{
     border-radius: 40px;
     padding:50px 20px;
     box-shadow:0 10px 10px rgba(0,0,0,0.5);
-    margin: 50;
+    margin: 50px;
 }
 abbrv{   
     color:black;
     font-family:gotham;
-    font-size: 20px;
+    font-size: 16px;
 }
     ul {
-        border-radius: 10px;
         list-style-type: none;
         margin: 0;
         padding: 20px;
         overflow: hidden;
-        background-color: #333333;
         text-align: center;
         }             
     li{
@@ -60,15 +172,22 @@ abbrv{
         padding: 16px;
         text-decoration: none;
         background-color: none;
+
+        overflow: hidden;
+        background: linear-gradient(to right, #FF3789, #FFA4B3 50%, white 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        text-decoration: none; 
         }
-    li:hover.select{
-        background: linear-gradient(to bottom right, #ffc3a0, #ffafbd);
+    li:hover{
+        background-position: 0 100%;
         background-clip:text;
         fill: transparent;
         }                
-    li:hover.remove{
-        background-color: #333333;
-                }
     a{
         background-color:transparent;
         color: white;

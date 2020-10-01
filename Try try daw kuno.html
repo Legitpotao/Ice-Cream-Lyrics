@@ -18,8 +18,10 @@ Coded by: Legitpotato
 <html>
     <head lang="en-PH">
         <title>Ice Cream Lyrics</title> 
-        <link rel="stylesheet" type="text/css" href="C:\Users\Arvin J C. Matutino\Desktop\Web Development\Web Dev\First web\styles.css">
-    </head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head> 
+        <!--
         <style> 
             body{
                 background-image: url('darkened.jpg');
@@ -28,25 +30,110 @@ Coded by: Legitpotato
                 background-size: cover;
             }
         </style>
+    -->
     <body> 
         <header>
         <ul>
-            <li class="select" > <span data-content="Jennie" aria-hidden="true"></span><a title="Check their profile" href="https://kprofiles.com/jennie-facts-profile/" target="_blank">Jennie</a></li>
-            <li class="remove">|</li> 
-            <li class="select"><a title="Check their profile" href="https://kprofiles.com/jisoo-facts-profile/" target="_blank">Jisoo</a></li>
-            <li class="remove">|</li>
-            <li class="select"><a title="Check their profile" href="hhttps://kprofiles.com/rose-black-pink-facts-profile/" target="_blank">Rose</a>
-            <li class="remove">|</li>
-            <li class="select"><a title="Check their profile" href="https://kprofiles.com/lisa-black-pink-facts-profile/" target="_blank">Selena</a></li>
+            <li><a title="Check her profile" href="https://kprofiles.com/jennie-facts-profile/" target="_blank">Jennie</a></li>
+            <li class="select"><a title="Check her profile" href="https://kprofiles.com/jisoo-facts-profile/" target="_blank">Jisoo</a></li>
+            <li><a title="Check her profile" href="https://kprofiles.com/lisa-black-pink-facts-profile/" target="_blank">Lisa</a>
+            <li><a title="Check her profile" href="hhttps://kprofiles.com/rose-black-pink-facts-profile/" target="_blank">Rose</a>
+            <li><a title="Check her profile" href="https://www.instagram.com/SelenaGomez/" target="_blank">Selena</a></li>
         </ul>
         </header>
-   
-        <p id="bppicture" align="center"><img align="center" src="C:\Users\Arvin J C. Matutino\Desktop\Web Development\Web Dev\First web\bp ice cream.jpg" alt="Blackpink!" style="width:960;height:540s;" usemap="#workmap"></p>
-                    <map name="workmap">
-                        <area shape="circle" title="Lalisa Manoban" coords="536, 228, 101" alt="Lalisa" href="https://i.pinimg.com/originals/51/71/e8/5171e8fca03592cb7a893f3360b0ab0a.jpg" target="_blank">
-                        <area shape="poly" title="Lalisa Manoban" coords="294, 539, 292, 302, 485, 269, 597, 365, 505, 539" href="https://i.pinimg.com/originals/51/71/e8/5171e8fca03592cb7a893f3360b0ab0a.jpg" target="_blank">
-                        <area shape="poly" title="Park Chaeyoung" coords="616, 159, 685, 117, 739, 186, 736, 226, 681, 294, 633, 188" href="https://th.bing.com/th/id/OIP.4dRQi7tFx7eeSMArXGSehgHaFL?pid=Api&rs=1" target="_blank">
-                    </map>s
+    <div>
+        <div class="slideshow-container">
+            <span id="mySlides-1"></span>
+            <span id="mySlides-2"></span>
+            <span id="mySlides-3"></span>
+            <span id="mySlides-4"></span>
+            <span id="mySlides-5"></span>
+
+            <div class="mySlides slide">
+              <div class="numbertext">1 / 7</div>
+              <img src="pics/bp.jpg" style="width:100%" usemap="#workmap">
+                <map name="workmap">
+                    <area shape="circle" coords="574, 1133, 136" alt="Jisoo" title="This is Jisoo">
+                    <area shape="circle" coords="1491, 1147, 136" alt="Lisa" title="This is Lisa">
+                    <area shape="circle" coords="2437, 1078, 136" alt="Jennie" title="This is Jennie">
+                    <area shape="circle" coords="3434, 1100, 136" alt="Rose" title="This is Rose">
+                </map>
+            </div>
+
+            <div class="mySlides slide">
+              <div class="numbertext">2 / 7</div>
+              <img src="pics/b2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides slide">
+              <div class="numbertext">3 / 7</div>
+              <img src="pics/jennie.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides slide">
+              <div class="numbertext">4 / 7</div>
+              <img src="pics/jisoofixed.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides slide">
+              <div class="numbertext">5 / 7</div>
+              <img src="pics/rose.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides slide">
+              <div class="numbertext">6 / 7</div>
+              <img src="pics/lisa.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides slide">
+              <div class="numbertext">7 / 6</div>
+              <img src="pics/selena.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>  
+              <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+
         <p id="Lyrics">
             <span id="Icecream" title="Ice creaaaam">Ice Cream</span><br>
             <span id="Author">BLACKPINK ft. Selena Gomez</span><br>
@@ -153,8 +240,10 @@ If you know what I mean<br>
 <br>
 Ice cream, ice cream<br>
 Ice cream<br>
+<br>
 </abbrv>
-        </p>
+    <iframe width="960px" height="540px" src="https://www.youtube.com/watch?v=vRXZj0DzXIA"></iframe>
+            </p>
+        </div>
     </body> 
 </html>
-
