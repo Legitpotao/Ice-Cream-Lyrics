@@ -54,7 +54,7 @@ img {vertical-align: middle;}
   -o-transition: left 2s;
 }
 
-/* Number text (1/4 etc) */
+/* Number text (1/7) */
 .numbertext {
   font-family: lucida-sgrande;
   color: rgba(255, 255, 255, 0.5);
@@ -89,29 +89,6 @@ img {vertical-align: middle;}
   -webkit-transition: left 2s ease;
   -o-transition: left 2s ease;
 }
-
-
-/* Slide animation */
-/* 
-.slide {
-        float: left;
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-      }
-      #mySlides-1:target ~ .slideshow-container {
-        left: 0px;
-      }
-      #mySlides-2:target ~ .slideshow-container {
-        left: -1000px;
-      }
-      #mySlides-3:target ~ .slideshow-container {
-        left: -2000px;
-      }
-      #mySlides-4:target ~ .slideshow-container {
-        left: -3000px;
-}
-*/
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
