@@ -8,7 +8,7 @@ header{
     background-color: #383759;
 }
 body{
-    background-color: #383759;
+    background-color: #ffffff;
     margin:0px;
 }
 /*Slideshow css*/
@@ -129,7 +129,9 @@ img {vertical-align: middle;}
     background-color: whitesmoke;
     border-radius: 40px;
     padding:50px 20px;
+    /*
     box-shadow:0 10px 10px rgba(0,0,0,0.5);
+    */
     margin: 50px;
 }
 abbrv{   
